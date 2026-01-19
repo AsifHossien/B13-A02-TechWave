@@ -4,9 +4,122 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 body {
     background: #0b0d17;
     color: #ffffff;
     line-height: 1.6;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.subtitle {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #cfcfcf;
+}
+button {
+    cursor: pointer;
+}
+.navbar {
+    background: #0b0d17;
+    padding: 20px 0;
+    top: 0;
+    z-index: 100;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.logo span {
+    background: linear-gradient(135deg, #f7e93f, #fb09b4, #9100f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    cursor: pointer;
+}
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+.btn-gradient {
+    background: linear-gradient(47.64deg,
+            rgba(247, 233, 63, 1),
+            rgba(251, 9, 180, 1),
+            rgba(145, 0, 248, 1));
+    border: none;
+    padding: 10px 22px;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+.btn-gradient:hover {
+    transform: translateY(-3px);
+}
+.hamburger {
+    display: none;
+    font-size: 26px;
+}
+.hero {
+    background: url("assets/hero-bg.png") center/cover no-repeat;
+    padding: 120px 20px;
+    text-align: center;
+}
+.podcast-circle {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto 24px;
+    background: url("assets/hero-circle.png") center/contain no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.podcast-circle img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+.badge {
+    position: absolute;
+    top: -6px;
+    right: 20px;
+    background: #00ff88;
+    color: #000;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.btn-outline {
+    background: transparent;
+    border: 1px solid #00FF88;
+    padding: 10px 22px;
+    border-radius: 25px;
+    color: #00FF88;
+    font-size: 16px;
 }
