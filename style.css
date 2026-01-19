@@ -324,7 +324,6 @@ button {
     z-index: 9999;
     padding: 40px 16px;
 }
-
 .video-modal iframe {
     width: min(900px, 95%);
     height: min(506px, 56vw);
@@ -333,11 +332,9 @@ button {
     border: 0;
     border-radius: 16px;
 }
-
 .video-modal:target {
     display: block;
 }
-
 .close {
     position: fixed;
     top: 18px;
@@ -352,12 +349,10 @@ button {
     text-decoration: none;
     font-size: 26px;
 }
-
 .heading {
     font-size: 42px;
     font-weight: 700;
 }
-
 .host {
     max-width: 1200px;
     margin: 40px auto 80px auto;
@@ -365,32 +360,27 @@ button {
     background: rgba(53, 17, 101, 0.4);
     padding: 40px;
 }
-
 .host-wrapper {
     display: flex;
     gap: 40px;
     align-items: center;
 }
-
 .host-wrapper img {
     width: 100%;
     max-width: 200px;
     border-radius: 40px;
 }
-
 .host-info {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 .socials a {
     margin-right: 15px;
     color: #7f5cff;
     text-decoration: none;
     font-size: 18px;
 }
-
 .socials i {
     background: linear-gradient(135deg, #f7e93f, #fb09b4, #9100f8);
     -webkit-background-clip: text;
@@ -420,4 +410,101 @@ button {
 }
 .footer-copy {
     opacity: 0.75;
+}
+@media (max-width: 768px) {
+    .nav-links,
+    .nav>.btn-gradient {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hero {
+        padding: 80px 16px;
+    }
+    .podcast-circle {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto 18px;
+    }
+    .badge {
+        top: 18px;
+        right: -6px;
+        font-size: 12px;
+        padding: 6px 14px;
+        border-radius: 999px;
+    }
+    .hero-content h1 {
+        font-size: 44px;
+        font-weight: 800;
+    }
+    .hero-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 14px;
+        flex-wrap: nowrap;
+    }
+    .hero-buttons .btn-gradient,
+    .hero-buttons .btn-outline {
+        width: 170px;
+        padding: 12px 16px;
+        border-radius: 999px;
+        font-size: 14px;
+    }
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+    .about-divider {
+        margin: 40px auto 30px;
+    }
+    .feature-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+    }
+    .card--premium,
+    .card--mobile,
+    .card--global,
+    .card--exclusive,
+    .card--resources {
+        grid-area: auto;
+    }
+    .feature-grid .card {
+        padding: 26px 20px;
+        border-radius: 22px;
+    }
+    .episode-grid {
+        grid-template-columns: 1fr;
+    }
+    .episode-thumb {
+        height: 200px;
+    }
+    .host {
+        padding: 24px;
+        border-radius: 24px;
+    }
+    .host-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .host-wrapper img {
+        max-width: 160px;
+    }
+    .footer-content h2 {
+        font-size: 44px;
+        margin-bottom: 10px;
+    }
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        gap: 16px 26px;
+        margin: 14px 0 18px;
+    }
+    .icons p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 0.9;
+    }
 }
